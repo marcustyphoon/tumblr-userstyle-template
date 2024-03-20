@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "eslint . && prettier . --check",
+    "fetch-map": "node utilities/fetch-map.js",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.4",
+    "puppeteer": "^22.6.0"
+  }
+}
