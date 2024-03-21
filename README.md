@@ -20,6 +20,6 @@ Add as many files as you want to the source folder, calling them `whatever.user.
 
 #### building and rebuilding
 
-Run `npm run build` whenever you make changes to a style in the source folder. This will apply the saved CSS map to your source and copy the result to the output folder.
+Run `npm run build` whenever you make changes to a style in the source folder. This will apply the saved CSS map to your source and copy the result to the output folder. Run `npm run watch` instead to have this done automatically.
 
 If Tumblr has changed the css map and none of your styles work, version bump your styles and run `npm run fetch-map && npm run build`. This will download the current CSS map, rebuild all of your styles with it, and copy the results to the output folder. This will not be needed often (a few times per year maybe).
