@@ -9,7 +9,7 @@ export default css`
   @author         Me
   ==/UserStyle== */
 
-  @-moz-document domain("tumblr.com") {
+  ${'@-moz-document domain("tumblr.com")'} {
     ${keyToCss('createPost')} > a {
       background-color: rgba(var(--white-on-dark), 0.13);
       color: rgba(var(--white-on-dark), 0.65);

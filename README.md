@@ -1,5 +1,9 @@
 This is a template for an open-source repository containing one or more user styles for Tumblr. It lets you write user style source code using semantic keys like `reblogHeader` and automatically translates them into e.g. `:is(.fAAi8)` using Tumblr's CSS map. It's set up with automatic code formatting using `prettier`.
 
+#### known issues
+
+The `@-moz-document` query breaks code suggestions unless you wrap it weirdly; see https://github.com/marcustyphoon/tumblr-userstyle-template/issues/1. The example style source includes this fix.
+
 ## developing
 
 #### getting started
