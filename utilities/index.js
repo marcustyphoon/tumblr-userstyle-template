@@ -27,7 +27,7 @@ const cssMap = await getCssMap();
 
 export const keyToClasses = (...keys) => keys.flatMap((key) => cssMap[key]).filter(Boolean);
 
-export const keyToCss = (...keys) =>
-  `:is(${keyToClasses(...keys)
-    .map((className) => `.${className}`)
-    .join(', ')})`;
+export const keyToCss = (...keys) => {
+  const classSelectors = keyToClasses(...keys).map((className) => `.${className}`);
+  return classSelectors.length > 1 ? `:is(${classSelectors.join(', ')})` : classSelectors[0];
+};
