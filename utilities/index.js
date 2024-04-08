@@ -18,7 +18,7 @@ export const css = (...template) => {
 const getCssMap = async () => {
   try {
     return JSON.parse(await fs.readFile(urlPath('./cssmap.json')));
-  } catch (e) {
+  } catch {
     await import(urlPath('./fetch-map.js'));
     return JSON.parse(await fs.readFile(urlPath('./cssmap.json')));
   }
